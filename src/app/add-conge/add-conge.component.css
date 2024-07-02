@@ -1,0 +1,52 @@
+h1 {
+    font-family: Arial, sans-serif; /* Choisir une police lisible et professionnelle */
+    font-size: 32px; /* Taille de la police */
+    color: #bd9e14; /* Couleur du texte */
+    text-align: center; /* Alignement du texte au centre */
+    text-transform: capitalize; /* Mettre la première lettre de chaque mot en majuscule */
+    margin-bottom: 20px; /* Marge en bas pour espacement */
+    /* Ajouter d'autres propriétés CSS selon vos préférences */
+}
+.site-section {
+    background-color: #f8f9fa; /* Couleur de fond de la section */
+    padding: 50px 0; /* Espacement intérieur de la section */
+}
+
+.container {
+    max-width: 800px; /* Largeur maximale du conteneur */
+    margin: 0 auto; /* Centrer le conteneur */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacement entre les éléments du formulaire */
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%; /* Largeur des champs de saisie */
+    padding: 10px; /* Espacement interne des champs de saisie */
+    border: 1px solid #ccc; /* Bordure des champs de saisie */
+    border-radius: 4px; /* Bordure arrondie des champs de saisie */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none; /* Supprimer la bordure du bouton */
+    padding: 10px 20px; /* Espacement interne du bouton */
+    border-radius: 4px; /* Bordure arrondie du bouton */
+    cursor: pointer; /* Curseur de souris de type pointeur */
+    transition: background-color 0.3s; /* Animation de transition de couleur de fond */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.col-lg-7 {
+    margin: 0 auto; /* Centrer la colonne */
+    background-color: #fff; /* Couleur de fond de la colonne */
+    padding: 20px; /* Espacement intérieur de la colonne */
+    border-radius: 4px; /* Bordure arrondie de la colonne */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre portée de la colonne */
+}

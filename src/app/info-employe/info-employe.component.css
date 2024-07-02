@@ -1,0 +1,38 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Style des cellules du thead */
+  .table th {
+    background-color: #f0ad4e; /* Couleur d'arrière-plan */
+    color: white; /* Couleur du texte */
+    padding: 10px; /* Espace intérieur */
+  }
+  
+  /* Style des cellules du tbody */
+  .table td {
+    border: 1px solid #ddd; /* Bordure */
+    padding: 8px; /* Espace intérieur */
+  }
+  
+  /* Style des lignes du tbody : une ligne sur deux */
+  .table tr:nth-child(even) {background-color: #f2f2f2;}
+  
+  /* Style au survol d'une ligne */
+  .table tr:hover {background-color: #ddd;}
+  
+  /* Style du bouton */
+  .btn-warning {
+    background-color: #f0ad4e; /* Couleur d'arrière-plan */
+    border: none; /* Pas de bordure */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espace intérieur */
+    text-align: center; /* Alignement du texte */
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block; /* Type d'affichage */
+    font-size: 16px; /* Taille de la police */
+    margin: 4px 2px; /* Marge extérieure */
+    cursor: pointer; /* Forme du curseur */
+    border-radius: 5px; /* Bordures arrondies */
+  }

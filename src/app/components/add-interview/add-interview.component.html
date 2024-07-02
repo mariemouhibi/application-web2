@@ -1,0 +1,30 @@
+<div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <h1>Ajouter un Entretien</h1>
+          <form #addinterviewForm="ngForm" (ngSubmit)="addInterview()">
+
+            <div class="form-group" >
+              <input type="date" class="form-control" [(ngModel)]="entretien.date" [ngModelOptions]="{standalone: true}" placeholder="Date">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" [(ngModel)]="entretien.lieu" [ngModelOptions]="{standalone: true}" placeholder="Lieu">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control"  [(ngModel)]="entretien.type" [ngModelOptions]="{standalone: true}" placeholder="Type">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control"  [(ngModel)]="entretien.avis" [ngModelOptions]="{standalone: true}" placeholder="Avis">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control"  [(ngModel)]="entretien.statue" [ngModelOptions]="{standalone: true}" placeholder="Statue">
+              </div>
+            
+              <input type="submit" class="btn btn-primary py-3 px-5" value="ajouter">  
+          </form>  
+        </div>
+        
+      </div>
+    </div>
+  </div>

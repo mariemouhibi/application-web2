@@ -1,0 +1,34 @@
+<div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <form #addJobForm="ngForm" (ngSubmit)="ajouterOffre()">
+
+            <div class="form-group" >
+              <input type="text" class="form-control" [(ngModel)]="job.createdby" [ngModelOptions]="{standalone: true}" placeholder="Created by">
+            </div>
+            <div class="form-group">
+              <input type="date" class="form-control" [(ngModel)]="job.dateposule" [ngModelOptions]="{standalone: true}" placeholder="Date de postulation ">
+            </div>
+            <p>Date formatée : {{ job.dateposule | date:'dd/MM/yyyy' }}</p>
+            <div class="form-group">
+              <input type="text" class="form-control"  [(ngModel)]="job.name" [ngModelOptions]="{standalone: true}" placeholder="Offre ">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control"  [(ngModel)]="job.contrat" [ngModelOptions]="{standalone: true}" placeholder="Contrat">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" [(ngModel)]="job.tache" [ngModelOptions]="{standalone: true}" placeholder="Description">
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary py-3 px-5" value="ajouter">  
+            </div>
+          </form>  
+        </div>
+        <div class="col-lg-4 ml-auto">
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>

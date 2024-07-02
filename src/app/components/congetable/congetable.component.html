@@ -1,0 +1,29 @@
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Debut</th>
+        <th>Fin</th>
+        <th>Temps</th>
+        <th>Description</th>
+        <th>Actions</th>
+
+    </tr>
+    <tr *ngFor="let m of congeTab" [ngClass]="{'accepted-row': isCongeAccepted(m.id)}">
+        <td>{{m.id}}</td>
+        <td>{{m.name}}</td>
+        <td>{{m.type}}</td>
+        <td>{{m.debut}}</td>
+        <td>{{m.fin}}</td>
+        <td>{{m.temps}}</td>
+        <td>{{m.description}}</td>
+        <td>
+            <Button class="btn-warning"  (click)="toggleAcceptedConge(m.id);showAlert()">
+Accepted              </Button>
+<button class="btn-danger" (click)=" supprimer(m.id);showRefusedAlert()">
+Refused  </button>
+    
+        </td>
+    </tr>
+    </table>

@@ -1,0 +1,47 @@
+  <h3> Signup</h3>
+  <div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <form #signupForm="ngForm" (ngSubmit)="addUser()">
+                  <div class="form-group" >
+                    <input type="email" class="form-control" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" placeholder="Email">
+                </div>
+                  <div class="form-group" >
+                    <input type="text" class="form-control" [(ngModel)]="user.name" [ngModelOptions]="{standalone: true}" placeholder="nom">
+                </div>
+                <div class="form-group" >
+                  <input type="text" class="form-control" [(ngModel)]="user.userName" [ngModelOptions]="{standalone: true}" placeholder="Prenom
+                  ">
+              </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" placeholder="Password">
+                        </div>
+                   
+                    <div class="form-group" >
+                      <input type="password" class="form-control" [(ngModel)]="user.confirmPassword" [ngModelOptions]="{standalone: true}" placeholder="ConfirmPassword">
+                  </div>
+                  <div class="form-group" >
+                    <input type="text" class="form-control" [(ngModel)]="user.level" [ngModelOptions]="{standalone: true}" placeholder="Niveau">
+                </div>
+                <div class="form-group" >
+                  <input type="text" class="form-control" [(ngModel)]="user.adresse" [ngModelOptions]="{standalone: true}" placeholder="Adresse">
+              </div>
+              <div class="form-group" >
+                <input type="text" class="form-control" [(ngModel)]="user.ville" [ngModelOptions]="{standalone: true}" placeholder="ville">
+            </div>
+            <div class="form-group" >
+              <input type="number" class="form-control" [(ngModel)]="user.experience" [ngModelOptions]="{standalone: true}" placeholder="Experience">
+          </div>
+          <div class="form-group" >
+            <input type="text" class="form-control" [(ngModel)]="user.nationality" [ngModelOptions]="{standalone: true}" placeholder="nationnalité">
+        </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary py-3 px-5"> Signup </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

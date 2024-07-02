@@ -1,0 +1,26 @@
+<table  class="table table-striped" style="margin-top: 2%;">
+    <thead class="thead-inverse">
+    <tr>
+        <th>ID</th>
+        <th>Created By</th>
+        <th>Date</th>
+        <th>Offre</th>
+        <th>Contrat</th>
+        <th>Tache</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let m of jobsTab">
+        <td>{{m.id}}</td>
+        <td>{{m.createdby}}</td>
+        <td>{{m.dateposule}}</td>
+        <td>{{m.name}}</td>
+        <td>{{m.contrat}}</td>
+        <td class="large-column">{{m.tache}}</td>
+         <td>
+            <button class="btn btn-postuler" (click)="postuler()">Postuler</button>
+
+         </td>
+    </tr>
+
+    </table>

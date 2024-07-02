@@ -1,0 +1,15 @@
+/* candidature.component.css */
+.btn-postuler {
+    background-color: #ffc107; /* couleur de fond */
+    color: #fff; /* couleur du texte */
+    border: none; /* pas de bordure */
+    padding: 10px 20px; /* espacement intérieur */
+    font-size: 16px; /* taille de police */
+    cursor: pointer; /* curseur de souris */
+    border-radius: 5px; /* coins arrondis */
+  }
+  
+  .btn-postuler:hover {
+    background-color: #ffa000; /* couleur de fond au survol */
+  }
+  

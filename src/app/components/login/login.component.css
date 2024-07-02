@@ -1,0 +1,36 @@
+/* Ensure the body and html take the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+.authentication-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.authentication-inner {
+    width: 800%;
+    max-width: 600px; /* Adjust the max-width as needed */
+   
+
+
+}
+
+.ui-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(174, 181, 184, 0.897);
+}
+
+.bg-dark {
+    background-color: rgba(27, 14, 14, 0.918);
+}

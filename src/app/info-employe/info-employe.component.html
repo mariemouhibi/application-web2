@@ -1,0 +1,25 @@
+<table class="table">
+    <td><img src="assets/images/person_1.jpg" alt=""></td> <!-- Ajout de la photo -->
+
+<tr>
+    <th>ID</th>
+    <th> Nom </th>
+    <th>Prenom</th>
+    <th>Email</th>
+    <th>Telephone</th>
+    <th>Poste</th>
+    <th>Actions</th>
+</tr>
+<tr >
+    <td>{{infoTab.id}}</td>
+    <td>{{infoTab.firstName}}</td>
+    <td>{{infoTab.lastName}}</td>
+    <td>{{infoTab.email}}</td>
+    <td>{{infoTab.phone}}</td>
+    <td>{{infoTab.occupation}}</td>
+    <td>
+          <button class="btn btn-warning" (click)="goToEdit(infoTab.email)">Modifier</button>
+
+    </td>
+</tr>
+</table>

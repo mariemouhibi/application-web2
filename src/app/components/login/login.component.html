@@ -1,0 +1,30 @@
+<div class="ui-bg-overlay bg-red opacity-25"></div>
+
+<div class="authentication-wrapper">
+    <div class="authentication-inner py-5">
+        <div class="card" [@fallIn]="state">
+            <div class="p-4 p-sm-5" style="padding: 5rem !important; padding-top: 50px;">
+                <!-- Logo -->
+                <div class="d-flex justify-content-center align-items-center pb-2 mb-4">
+                    <div class="ui-w-60">
+                        <div class="w-100 position-relative" style="padding-bottom: 10%">
+                            <img src="../../../../assets/images/5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <form #loginForm="ngForm" (ngSubmit)="login()">
+                    <div class="form-group">
+                        <input type="email" class="form-control" [(ngModel)]="user.email" [ngModelOptions]="{standalone: true}" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" [(ngModel)]="user.password" [ngModelOptions]="{standalone: true}" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary py-3 px-5">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

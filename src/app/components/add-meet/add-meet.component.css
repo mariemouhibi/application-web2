@@ -1,0 +1,65 @@
+/* Style pour le formulaire */
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour la section */
+.site-section {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+/* Style pour le titre */
+h2.section-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+h1{
+    font-size: 24px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    color: #c49411; /* Couleur du texte */
+    margin-bottom: 20px; /* Espacement en bas */
+}
+

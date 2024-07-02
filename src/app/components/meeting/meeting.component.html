@@ -1,0 +1,17 @@
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Date</th>
+        <th>Titre</th>
+        <th>Type</th>
+        
+    </tr>
+    <tr *ngFor="let m of meetTab">
+        <td>{{m.id}}</td>
+        <td>{{m.date}}</td>
+        <td>{{m.titre}}</td>
+        <td>{{m.type}}</td>
+    
+    </tr>
+    </table>
+    <button class="add-btn" (click)="onAddMeet()">Ajouter</button>

@@ -1,0 +1,44 @@
+<h2>Liste des Candidats</h2>
+
+<div class="form-group" >
+    <input type="text" class="form-control" [(ngModel)]="term"  placeholder="Nom">
+</div>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Cin</th>
+        <th>Email</th>
+        <th>Date-de-Naissance</th>
+        <th>Telephone</th>
+        <th>Diplome</th>
+        <th>Niveau</th>
+        <th>Offre</th>
+        <th>CV</th>
+        <th>Actions</th>
+
+    </tr>
+    <tr *ngFor="let m of candidatTab | myfiltre:term">
+        <td>{{m.id}}</td>
+        <td>{{m.name}}</td>
+        <td>{{m.cin}}</td>
+        <td>{{m.email}}</td>
+        <td>{{m.dateDeNaissance}}</td>
+        <td>{{m.telephone}}</td>
+        <td>{{m.diplome}}</td>
+        <td>{{m.niveau}}</td>
+        <td>{{m.offre}}</td>
+        <td>
+            <a [href]="m.cvUrl" target="_blank" onclick="voirCV(cvUrl)" >Voir le CV</a>
+
+        </td>
+
+        <td>
+            <Button class="btn-warning" for="flexCheckDefault" (click)="acceptCandidate(m.id)">
+Accepted              </Button>
+<button class="btn-danger" for="flexCheckDefault" (click)="suppCandidat(m.id)">
+Refused  </button>
+    
+        </td>
+    </tr>
+    </table>

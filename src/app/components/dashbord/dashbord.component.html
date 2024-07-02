@@ -1,0 +1,173 @@
+
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+        </div>
+        <ul>
+            <li><img src="assets/images/person_2.jpg" alt="" class="photo"></li>
+            <h1 class="nom"> Marie Dupont </h1>
+            <li><img src="assets/images/img_2" alt="">&nbsp;<span>Dashbord</span> </li>
+            <div id="nomElement" (mouseover)="toggleList()" (mouseleave)="hideList()">
+            <li><img src="assets/images/img_2" alt="">&nbsp;<span>Employés</span> </li>
+            <ul id="listeElement" *ngIf="showList">
+            <li><a routerLink="/dashboard/employees" class="nav-link">Liste des Employés</a></li>
+            </ul>
+            <ul id="listeElement" *ngIf="showList">
+                <li><a routerLink="/dashboard/addemploye" class="nav-link">Ajouter Employé</a></li>
+                </ul>
+            </div>
+            <div id="nomElement" (mouseover)="toggleList()" (mouseleave)="hideList()">
+            <li><img src="assets/images/img_3" alt="">&nbsp;<span>Congés</span> </li>
+            <ul id="listeElement" *ngIf="showList">
+                <li><a routerLink="/dashboard/conge" class="nav-link">Liste des Congés</a></li>
+                </ul>
+            </div>
+            <div id="Element" (mouseover)="toggleList()" (mouseleave)="hideList()">
+            <li><img src="assets/images/img_4" alt="">&nbsp;<span>Réunions</span> </li>
+            <li><img src="assets/images/img_5" alt="">&nbsp;<span>Recrutement</span> </li>
+            <ul id="listeElement" *ngIf="showList">
+                <li><a routerLink="/dashboard/entretien" class="nav-link">Entretiens</a></li>
+                </ul>
+                <ul id="listeElement" *ngIf="showList">
+                    <li><a routerLink="/dashboard/jobstable" class="nav-link">Offres</a></li>
+                    </ul>
+            </div>
+           
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="assets/images/s2.png" alt=""></button>
+                </div>
+                <div class="user">
+                    <a href="#" class="btn">Add New</a>
+                    <img src="assets/images/notif.png" alt="">
+                    <div class="img-case">
+                        <img src="assets/images/user.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>2194</h1>
+                        <h3>Candidats</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="assets/images/person_3" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>53</h1>
+                        <h3>Employees</h3>
+                        
+                    </div>
+                    <div class="icon-case">
+                        <img src="assets/images/person_4" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>5</h1>
+                        <h3>Recrutement</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="assets/images/person_5" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>350000</h1>
+                        <h3>Income</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="assets/images/post_1" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h2>Recent Payments</h2>
+                        <a class="btn-warning" >View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>School</th>
+                            <th>Amount</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="new-students">
+                    <div class="title">
+                        <h2>New Candidats</h2>
+                        <a  class="btn" (click)="goToList()">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            
+                            
+                            <th>Name</th>
+                        </tr>
+                        <tr>
+                            <td><img src="assets/images/person_1.jpg" alt=""></td>
+                            <td>John pierre</td>  
+                        </tr>
+                        <tr>
+                            <td><img src="assets/images/person_4.jpg"  alt=""></td>
+                            <td>John Steve Doe</td>
+                        </tr>
+                            
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

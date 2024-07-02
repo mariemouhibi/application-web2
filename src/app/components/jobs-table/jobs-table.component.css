@@ -1,0 +1,66 @@
+/* Styles for the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2%;
+}
+
+/* Alternate row colors */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+.table th {
+    background-color: #8512f0;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Cell styles */
+.table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+/* Primary button style */
+.btn-postuler {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+/* Button hover effect */
+.btn:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+/* Button active effect */
+.btn:active,
+.btn.active {
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+  

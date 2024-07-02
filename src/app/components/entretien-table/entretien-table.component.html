@@ -1,0 +1,27 @@
+<table  class="table table-striped" style="margin-top: 2%;">
+    <thead class="thead-inverse">
+    <tr>
+        <th>ID</th>
+        <th>Date</th>
+        <th>Lieu</th>
+        <th>Type</th>
+        <th>Avis</th>
+        <th>Statue</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tr *ngFor="let m of interviewTab">
+        <td>{{m.id}}</td>
+        <td>{{m.date}}</td>
+        <td>{{m.lieu}}</td>
+        <td>{{m.type}}</td>
+        <td>{{m.avis}}</td>
+        <td>{{m.statue}}</td>
+        <td>
+              <button class="btn btn-warning" >Edit</button>
+            <button class="btn btn-danger"  (click)="supprimer(m.id)">Delete</button>
+    
+        </td>
+    </tr>
+    </table>
+    <button class="add-btn" (click)="onAddInterview()">Ajouter</button>

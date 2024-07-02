@@ -1,0 +1,30 @@
+
+<div class="form-group" >
+    <input type="text" class="form-control" [(ngModel)]="term"  placeholder="Name">
+</div>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Cin</th>
+        <th>Email</th>
+        <th>Date-de-Naissance</th>
+        <th>Telephone</th>
+        <th>Diplome</th>
+        <th>Niveau</th>
+        <th>Offre</th>
+       
+
+    </tr>
+    <tr *ngIf="candidatTab " >
+        <td>{{candidatTab.id}}</td>
+        <td>{{candidatTab.name}}</td>
+        <td>{{candidatTab.cin}}</td>
+        <td>{{candidatTab.email}}</td>
+        <td>{{candidatTab.dateDeNaissance}}</td>
+        <td>{{candidatTab.telephone}}</td>
+        <td>{{candidatTab.diplome}}</td>
+        <td>{{candidatTab.niveau}}</td>
+        <td>{{candidatTab.offre}}</td>
+    </tr>
+    </table>

@@ -1,0 +1,21 @@
+
+
+/* Bouton "Postuler" */
+.btn-postuler {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-postuler:hover {
+  background-color: #0056b3;
+}
+.post-entry-1-contents p,
+  .post-entry-1-contents ul,
+  .post-entry-1-contents button {
+    font-size: 1.1em; /* Taille de police légèrement plus grande */
+  }

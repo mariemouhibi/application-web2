@@ -1,0 +1,30 @@
+<div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <form #addemployeForm="ngForm" (ngSubmit)="ajouteremployer()">
+
+            <div class="form-group" >
+              <input type="text" class="form-control" [(ngModel)]="employes.firstName" [ngModelOptions]="{standalone: true}" placeholder="Nom">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" [(ngModel)]="employes.lastName" [ngModelOptions]="{standalone: true}" placeholder="Prenom">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control"  [(ngModel)]="employes.email" [ngModelOptions]="{standalone: true}" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control"  [(ngModel)]="employes.phone" [ngModelOptions]="{standalone: true}" placeholder="Telephone
+                ">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control"  [(ngModel)]="employes.occupation" [ngModelOptions]="{standalone: true}" placeholder="Occupation">
+              </div>
+              <input type="submit" class="btn btn-primary py-3 px-5" value="ajouter">  
+          </form>  
+        </div>
+        
+      </div>
+    </div>
+  </div>
+

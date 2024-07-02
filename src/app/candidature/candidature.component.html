@@ -1,0 +1,55 @@
+<h1 class="display-4 text-center mb-4" style="color: #f00707; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;">Candidature spontanée</h1>
+<div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <form #addcandidatForm="ngForm" (ngSubmit)="onSubmit()">
+
+            <div class="form-group" >
+              <input type="text" class="form-control" [(ngModel)]="cand.name" [ngModelOptions]="{standalone: true}" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" [(ngModel)]="cand.cin" [ngModelOptions]="{standalone: true}" placeholder="Cin">
+            </div>
+          
+            <div class="form-group">
+              <input type="email" class="form-control"  [(ngModel)]="cand.email" [ngModelOptions]="{standalone: true}" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input type="date" class="form-control"  [(ngModel)]="cand.dateDeNaissance" [ngModelOptions]="{standalone: true}" placeholder="Data De Naissance">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control"  [(ngModel)]="cand.telephone" [ngModelOptions]="{standalone: true}" placeholder="Telephone">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control"  [(ngModel)]="cand.diplome" [ngModelOptions]="{standalone: true}" placeholder="Diplome">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control"  [(ngModel)]="cand.niveau" [ngModelOptions]="{standalone: true}" placeholder="Niveau">
+              </div>
+              <div class="form-group">
+                <label for="cv_file">CV:</label>
+                <input type="file" id="cv_file" name="cv_file" (change)="onChange($event)">
+              </div>
+              <div class="form-group">
+                <select class="form-control"  [(ngModel)]="cand.offre" [ngModelOptions]="{standalone: true}">
+                    <option value="" disabled selected>Choisissez une offre</option>
+
+    <option value="Développeur Java">Développeur Java</option>
+    <option value="Ingénieur Qualité">Ingénieur Qualité</option>
+    <option value="Responsable Réseaux">Responsable Réseaux</option>
+    <option value="Testeur">Testeur</option>
+  </select>
+              </div>
+              <!-- <div class="form-group">
+                <label class="col-sm-2 col-sm-2 control-label">CV</label>
+                <input type="file" (change)="selectFileCV($event)" accept=".pdf" name="cv" required>
+  
+            </div>     -->
+              <input type="submit" class="btn btn-primary py-3 px-5" value="Postuler">  
+          </form>  
+        </div>
+        
+      </div>
+    </div>
+  </div>

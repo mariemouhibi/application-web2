@@ -1,0 +1,92 @@
+
+<head> 
+  <style>
+    body{
+      background-image: url(assets/images/int2.jpg);
+      background-size: cover;
+      height: 100vh;
+    margin: 0;
+    padding: 0;
+    .site-menu {
+    list-style-type: none; /* Supprime les puces de la liste */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Affiche les éléments en ligne */
+}
+    }
+.site-menu li {
+    margin-right: 20px; /* Espacement entre les éléments */
+    font-size:large;
+    font-style: oblique;
+    color: #e60b0b;
+    text-decoration: #e60b0b;
+}
+
+.site-menu li a {
+   
+    text-decoration: none; /* Supprime les soulignements */
+    padding: 10px 15px; /* Espacement intérieur */
+    border-radius: 5px; /* Bordures arrondies */
+    transition: all 0.3s ease; /* Animation de transition */
+}
+
+.site-menu li a:hover {
+    background-color: #f8f9fa; /* Couleur de fond au survol */
+    color: #007bff; /* Couleur du texte au survol */
+}
+
+.site-menu li a.about {
+    color: red; /* Couleur du texte */
+}
+  
+
+  </style>
+</head>
+<body>
+
+<header class="site-navbar site-navbar-target" role="banner">
+  <div class="container">
+    <div class="row align-items-center position-relative">
+      <div class="col-3">
+        <div class="site-logo">
+          <a href="index.html" class="font-weight-bold">Arcwork</a>
+        </div>
+      </div>
+      <div class="col-9 text-right">
+        <span class="d-inline-block d-lg-none"><a href="#" class="text-primary site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-primary"></span></a></span>
+        <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+          <ul class="site-menu main-menu js-clone-nav ml-auto ">
+            <li><a href="about.html" class="nav-link" >About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a routerLink="home" class="nav-link">Home</a></li>
+            <li><a routerLink="blog" class="nav-link">Jobs</a></li>
+            <li><a routerLink="signup" class="nav-link"> Signup </a></li>
+            <li><a routerLink="login" class="nav-link"> Login </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container pt-10" style="margin-top: 8%">
+  <div class="row">
+    <div class="col-sm d-flex justify-content-center align-items-start landingText mr-10">
+      <div class="col ml-3">
+        <div>
+         
+        </div>
+        <div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm d-flex justify-content-center ">
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+

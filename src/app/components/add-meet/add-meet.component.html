@@ -1,0 +1,24 @@
+<div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <h1>Ajouter une réunion</h1>
+          <form #addmeetForm="ngForm" (ngSubmit)="addMeet()">
+
+            <div class="form-group" >
+              <input type="date" class="form-control" [(ngModel)]="meet.date" [ngModelOptions]="{standalone: true}" placeholder="Date">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" [(ngModel)]="meet.titre" [ngModelOptions]="{standalone: true}" placeholder="Titre">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control"  [(ngModel)]="meet.type" [ngModelOptions]="{standalone: true}" placeholder="Type">
+            </div>
+            
+              <input type="submit" class="btn btn-primary py-3 px-5" value="ajouter">  
+          </form>  
+        </div>
+        
+      </div>
+    </div>
+  </div>

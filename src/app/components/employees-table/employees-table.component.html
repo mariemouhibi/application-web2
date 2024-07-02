@@ -1,0 +1,24 @@
+<table class="table">
+<tr>
+    <th>ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Occupation</th>
+    <th>Actions</th>
+</tr>
+<tr *ngFor="let m of employerTab">
+    <td>{{m.id}}</td>
+    <td>{{m.firstName}}</td>
+    <td>{{m.lastName}}</td>
+    <td>{{m.email}}</td>
+    <td>{{m.phone}}</td>
+    <td>{{m.occupation}}</td>
+    <td>
+          <button class="btn btn-warning" (click)="goToEdit(m.id)">Edit</button>
+        <button class="btn btn-danger" (click)="supprimer(m.id)">Delete</button>
+
+    </td>
+</tr>
+</table>

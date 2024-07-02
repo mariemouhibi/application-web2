@@ -1,0 +1,27 @@
+<div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <form #editEmployeForm="ngForm" (ngSubmit)="editemployer()">
+
+            <div class="form-group" >
+              <input type="text" class="form-control" [(ngModel)]="edit.firstName" [ngModelOptions]="{standalone: true}" placeholder="FirstName">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" [(ngModel)]="edit.lastName" [ngModelOptions]="{standalone: true}" placeholder="LastName">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control"  [(ngModel)]="edit.email" [ngModelOptions]="{standalone: true}" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control"  [(ngModel)]="edit.phone" [ngModelOptions]="{standalone: true}" placeholder="Phone">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control"  [(ngModel)]="edit.occupation" [ngModelOptions]="{standalone: true}" placeholder="Occupation">
+              </div>
+              <input type="submit" class="btn btn-primary py-3 px-5" value="edit">  
+          </form>  
+        </div>  
+      </div>
+    </div>
+  </div>
